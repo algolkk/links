@@ -1,5 +1,12 @@
 import { Card } from "./component/Card";
-import { FaRegHeart, FaRegComment, FaRegShareSquare } from "react-icons/fa";
+import {
+    FaRegHeart,
+    FaRegComment,
+    FaRegShareSquare,
+    FaTwitch,
+    FaDiscord,
+} from "react-icons/fa";
+import { SiMisskey } from "react-icons/si";
 
 export default function Home() {
     return (
@@ -12,9 +19,9 @@ export default function Home() {
                 height: "100vh",
             }}
         >
-            <Card icon={FaRegHeart} text={"Twitch"} />
-            <Card icon={FaRegComment} text={"Misskey.io"} />
-            <Card icon={FaRegShareSquare} text={"Discord"} />
+            <Card icon={FaTwitch} text={"Twitch"} />
+            <Card icon={SiMisskey} text={"Misskey.io"} />
+            <Card icon={FaDiscord} text={"Discord"} />
         </div>
     );
 }
