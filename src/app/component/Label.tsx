@@ -1,7 +1,11 @@
-export default function Label() {
-    return (
-        <div>
-            <span>input text here.</span>
-        </div>
-    );
+import React from "react";
+
+interface LabelProps {
+    text: string;
 }
+
+const Label: React.FC<LabelProps> = ({ text }) => {
+    return <p>{text}</p>;
+};
+
+export default Label;

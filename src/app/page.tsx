@@ -12,9 +12,9 @@ export default function Home() {
                 height: "100vh",
             }}
         >
-            <Card icon={FaRegHeart} />
-            <Card icon={FaRegComment} />
-            <Card icon={FaRegShareSquare} />
+            <Card icon={FaRegHeart} text={"Twitch"} />
+            <Card icon={FaRegComment} text={"Misskey.io"} />
+            <Card icon={FaRegShareSquare} text={"Discord"} />
         </div>
     );
 }
