@@ -1,12 +1,13 @@
 .cardContainer {
     display: flex;
     align-items: center;
-    height: 100px;
-    width: 300px;
-    font-size: x-large;
-    border: 1px solid currentColor;
+    height: 75px;
+    width: 225px;
+    font-size: large;
+    border: 5px solid #418b89;
     border-radius: 30px;
     margin: 10px;
+    background-color: #418b89;
     /* transition: transform 0.2s; */
 }
 
