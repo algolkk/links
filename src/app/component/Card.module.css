@@ -1,0 +1,18 @@
+.cardContainer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    font-size: x-large;
+    border: 1px solid currentColor;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.cardContainer > :first-child {
+    flex: 3;
+}
+
+.cardContainer > :last-child {
+    flex: 7;
+}

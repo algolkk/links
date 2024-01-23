@@ -1,7 +1,7 @@
-import Icon from "./Icon";
+import { Icon } from "./Icon";
 import Label from "./Label";
 import { IconType } from "react-icons";
-import styles from "./../css/Card.module.css";
+import styles from "./Card.module.css";
 
 interface CardProps {
     icon: IconType;

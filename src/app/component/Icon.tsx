@@ -1,9 +1,10 @@
 import { IconType } from "react-icons";
+import styles from "./Icon.module.css";
 
 interface IconProps {
     icon: IconType;
 }
 
-export default function Icon({ icon: IconComponent }: IconProps) {
-    return <IconComponent />;
-}
+export const Icon: React.FC<IconProps> = ({ icon: IconComponent }) => {
+    return <IconComponent className={styles.icon} />;
+};
