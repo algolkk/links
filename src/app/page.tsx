@@ -22,12 +22,36 @@ export default function Home() {
                 height: "100vh",
             }}
         >
-            <Card icon={FaTwitch} text={"Twitch"} />
-            <Card icon={SiMisskey} text={"Misskey.io"} />
-            <Card icon={FaDiscord} text={"Discord"} />
-            <Card icon={FaInstagram} text={"Instagram"} />
-            <Card icon={FaSteam} text={"Steam"} />
-            <Card icon={FaGithub} text={"Github"} />
+            <Card
+                icon={FaTwitch}
+                text={"Twitch"}
+                url={"http://github.com/algolkk"}
+            />
+            <Card
+                icon={SiMisskey}
+                text={"Misskey.io"}
+                url={"http://github.com/algolkk"}
+            />
+            <Card
+                icon={FaDiscord}
+                text={"Discord"}
+                url={"http://github.com/algolkk"}
+            />
+            <Card
+                icon={FaInstagram}
+                text={"Instagram"}
+                url={"http://github.com/algolkk"}
+            />
+            <Card
+                icon={FaSteam}
+                text={"Steam"}
+                url={"http://github.com/algolkk"}
+            />
+            <Card
+                icon={FaGithub}
+                text={"Github"}
+                url={"http://github.com/algolkk"}
+            />
         </div>
     );
 }
