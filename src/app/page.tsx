@@ -25,27 +25,27 @@ export default function Home() {
             <Card
                 icon={FaTwitch}
                 text={"Twitch"}
-                url={"http://github.com/algolkk"}
+                url={"https://www.twitch.tv/"}
             />
             <Card
                 icon={SiMisskey}
                 text={"Misskey.io"}
-                url={"http://github.com/algolkk"}
+                url={"https://misskey.io/"}
             />
             <Card
                 icon={FaDiscord}
                 text={"Discord"}
-                url={"http://github.com/algolkk"}
+                url={"https://discord.com/"}
             />
             <Card
                 icon={FaInstagram}
                 text={"Instagram"}
-                url={"http://github.com/algolkk"}
+                url={"https://www.instagram.com/"}
             />
             <Card
                 icon={FaSteam}
                 text={"Steam"}
-                url={"http://github.com/algolkk"}
+                url={"https://store.steampowered.com/"}
             />
             <Card
                 icon={FaGithub}
