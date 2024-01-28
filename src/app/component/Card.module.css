@@ -1,8 +1,22 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75px;
+    width: 40vh;
+    font-size: x-large;
+    border: 5px solid #418b89;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #418b89;
+}
+
 .cardContainer {
     display: flex;
     align-items: center;
     height: 75px;
-    width: 200px;
+    width: 20vh;
     font-size: large;
     border: 5px solid #418b89;
     border-radius: 30px;

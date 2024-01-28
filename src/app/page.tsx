@@ -1,4 +1,5 @@
 import { Card } from "./component/Card";
+import { Title } from "./component/Title";
 import {
     FaRegHeart,
     FaRegComment,
@@ -31,6 +32,7 @@ export default function Home() {
                     alignItems: "center",
                 }}
             >
+                <Title text={"AlgolKalam"} />
                 <div
                     style={{
                         display: "flex",
