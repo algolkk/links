@@ -1,18 +1,14 @@
 import { Card } from "./component/Card";
 import { Title } from "./component/Title";
-import {
-    FaRegHeart,
-    FaRegComment,
-    FaRegShareSquare,
-    FaTwitch,
-    FaDiscord,
-    FaInstagram,
-    FaSteam,
-    FaGithub,
-} from "react-icons/fa";
+import { FaTwitch, FaSteam, FaGithub } from "react-icons/fa";
 import { SiMisskey } from "react-icons/si";
 
 export default function Home() {
+    const urlMisskey = "https://misskey.io/@algolkk";
+    const urlTwitch = "https://www.twitch.tv/algolkalam";
+    const urlSteam = "https://steamcommunity.com/profiles/76561199177189397/";
+    const urlGithub = "https://github.com/algolkk";
+
     return (
         <div
             style={{
@@ -42,15 +38,11 @@ export default function Home() {
                     }}
                 >
                     <Card
-                        icon={FaTwitch}
-                        text={"Twitch"}
-                        url={"https://www.twitch.tv/"}
-                    />
-                    <Card
                         icon={SiMisskey}
                         text={"Misskey.io"}
-                        url={"https://misskey.io/"}
+                        url={urlMisskey}
                     />
+                    <Card icon={FaTwitch} text={"Twitch"} url={urlTwitch} />
                 </div>
                 <div
                     style={{
@@ -60,36 +52,8 @@ export default function Home() {
                         width: "100%",
                     }}
                 >
-                    <Card
-                        icon={FaDiscord}
-                        text={"Discord"}
-                        url={"https://discord.com/"}
-                    />
-                    <Card
-                        icon={FaInstagram}
-                        text={"Instagram"}
-                        url={"https://www.instagram.com/"}
-                    />
-                </div>
-
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        width: "100%",
-                    }}
-                >
-                    <Card
-                        icon={FaSteam}
-                        text={"Steam"}
-                        url={"https://store.steampowered.com/"}
-                    />
-                    <Card
-                        icon={FaGithub}
-                        text={"Github"}
-                        url={"http://github.com/algolkk"}
-                    />
+                    <Card icon={FaSteam} text={"Steam"} url={urlSteam} />
+                    <Card icon={FaGithub} text={"Github"} url={urlGithub} />
                 </div>
             </div>
             <div style={{ flex: 1 }}></div>
