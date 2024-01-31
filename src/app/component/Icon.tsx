@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import styles from "./Icon.module.css";
+import styles from "../style/Icon.module.css";
 
 interface IconProps {
     icon: IconType;

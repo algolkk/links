@@ -1,4 +1,4 @@
-import styles from "./Card.module.css";
+import styles from "../style/Card.module.css";
 import React from "react";
 
 interface TitleProps {

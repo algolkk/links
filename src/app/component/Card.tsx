@@ -1,7 +1,7 @@
 import { Icon } from "./Icon";
 import Label from "./Label";
 import { IconType } from "react-icons";
-import styles from "./Card.module.css";
+import styles from "../style/Card.module.css";
 import React from "react";
 
 interface CardProps {
