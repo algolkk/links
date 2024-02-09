@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 75px;
-    width: 51vh;
+    height: 5rem;
+    width: 20rem;
     font-size: xx-large;
     border: 5px solid #418b89;
     border-radius: 30px;
@@ -16,13 +16,72 @@
 .cardContainer {
     display: flex;
     align-items: center;
-    height: 75px;
-    width: 25vh;
+    height: 5rem;
+    width: 20rem;
     font-size: large;
     border: 5px solid #418b89;
     border-radius: 30px;
     margin: 10px;
     background-color: #418b89;
+}
+
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 5rem;
+        width: 55vw;
+        font-size: xx-large;
+        border: 5px solid #418b89;
+        border-radius: 30px;
+        margin: 10px;
+        padding-top: 5px;
+        background-color: #418b89;
+    }
+
+    .cardContainer {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        width: 55vw;
+        font-size: large;
+        border: 5px solid #418b89;
+        border-radius: 30px;
+        margin: 10px;
+        background-color: #418b89;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 5rem;
+        width: 100vw;
+        font-size: xx-large;
+        border: 5px solid #418b89;
+        border-radius: 30px;
+        margin: 10px;
+        padding-top: 5px;
+        background-color: #418b89;
+    }
+
+    .cardContainer {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        width: 100vw;
+        font-size: large;
+        border: 5px solid #418b89;
+        border-radius: 30px;
+        margin: 10px;
+        background-color: #418b89;
+    }
 }
 
 .cardContainer:hover {

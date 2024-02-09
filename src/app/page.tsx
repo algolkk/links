@@ -15,10 +15,9 @@ export default function Home() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                height: "100vh",
+                height: "40rem",
             }}
         >
-            <div style={{ flex: 1 }}></div>
             <div
                 style={{
                     flex: 1,
@@ -29,34 +28,13 @@ export default function Home() {
                 }}
             >
                 <Title text={"AlgolKalam"} />
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        width: "100%",
-                    }}
-                >
-                    <Card
-                        icon={SiMisskey}
-                        text={"Misskey.io"}
-                        url={urlMisskey}
-                    />
-                    <Card icon={FaTwitch} text={"Twitch"} url={urlTwitch} />
-                </div>
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        width: "100%",
-                    }}
-                >
-                    <Card icon={FaSteam} text={"Steam"} url={urlSteam} />
-                    <Card icon={FaGithub} text={"Github"} url={urlGithub} />
-                </div>
+
+                <Card icon={SiMisskey} text={"Misskey.io"} url={urlMisskey} />
+                <Card icon={FaTwitch} text={"Twitch"} url={urlTwitch} />
+
+                <Card icon={FaSteam} text={"Steam"} url={urlSteam} />
+                <Card icon={FaGithub} text={"Github"} url={urlGithub} />
             </div>
-            <div style={{ flex: 1 }}></div>
         </div>
     );
 }
