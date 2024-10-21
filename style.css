@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2d2d2d;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.round-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.round-button:hover {
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.round-button::before,
+.round-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transition: transform 0.7s ease;
+}
+
+.round-button::before {
+  z-index: 1;
+}
+
+.round-button::after {
+  border-width: 2px;
+  border-style: solid;
+  z-index: 2;
+}
+
+.round-button:hover::before,
+.round-button:hover::after {
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.round-button a img, .round-button img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  position: relative;
+  z-index: 3;
+}
+
+.round-button.me img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(35%);
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 300px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .round-button {
+    width: 100%;
+    max-width: 80px;
+  }
+}
+
+.round-button::before {
+  background-color: #1f1f1f;
+}
+
+.round-button::after {
+  border-color: #1f1f1f;
+}
+
+/* Mi button styles */
+.round-button.mi:hover::before,
+.round-button.mi:hover::after {
+  animation-name: colorChangeMi;
+}
+
+@keyframes colorChangeMi {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: rgb(160, 217, 10);
+    border-color: rgb(160, 217, 10);
+  }
+}
+
+/* Discord button styles */
+.round-button.discord:hover::before,
+.round-button.discord:hover::after {
+  animation-name: colorChangeDiscord;
+}
+
+@keyframes colorChangeDiscord {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: #5865f2;
+    border-color: #5865f2;
+  }
+}
+
+.round-button.github:hover::before,
+.round-button.github:hover::after {
+  animation-name: colorChangeGithub;
+}
+
+@keyframes colorChangeGithub {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: #000000;
+    border-color: #000000;
+  }
+}
+
+.round-button.steam:hover::before,
+.round-button.steam:hover::after {
+  animation-name: colorChangeSteam;
+}
+
+@keyframes colorChangeSteam {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: #0a446b;
+    border-color: #0a446b;
+  }
+}
+
+.round-button.twitch:hover::before,
+.round-button.twitch:hover::after {
+  animation-name: colorChangeTwitch;
+}
+
+@keyframes colorChangeTwitch {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: #9146FF;
+    border-color: #9146FF;
+  }
+}
+
+
+.round-button.youtube:hover::before,
+.round-button.youtube:hover::after {
+  animation-name: colorChangeYoutube;
+}
+
+@keyframes colorChangeYoutube {
+  0% {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  100% {
+    background-color: #FF0000;
+    border-color: #FF0000;
+  }
+}
