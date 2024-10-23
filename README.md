@@ -1,6 +1,7 @@
 # algolkk Links
 
-<img src="./img/me.png" width="64">
+[<img src="./img/me.png" width="64">](https://algolkk.github.io/links/)  
+https://algolkk.github.io/links/
 
 ## Thanks
 
