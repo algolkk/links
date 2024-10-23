@@ -1,7 +1,7 @@
 @font-face {
   font-family: "x12y16pxLineLinker";
   src: url("/font/x12y16pxLineLinker.woff2") format("woff2"),
-       url("/font/x12y16pxLineLinker.woff") format("woff");
+    url("/font/x12y16pxLineLinker.woff") format("woff");
 }
 
 body {
@@ -107,13 +107,28 @@ body {
   filter: grayscale(35%);
 }
 
-.title:hover { cursor: default; }
-.round-button.me:hover { cursor: default; }
-.round-button.mi:hover { background-color: rgb(160, 217, 10); }
+.title:hover {
+  cursor: default;
+}
+.round-button.me:hover {
+  cursor: default;
+  animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.round-button.mi:hover {
+  background-color: rgb(160, 217, 10);
+}
 .discord-id {
   display: none;
 }
-.round-button.discord:hover { 
+.round-button.discord:hover {
   background-color: #5865f2;
   .discord-id {
     color: #f0f0f0;
@@ -123,20 +138,26 @@ body {
     display: none;
   }
 }
-.round-button.github:hover { background-color: #000000; }
-.round-button.steam:hover { background-color: #0a446b; }
-.round-button.twitch:hover { background-color: #9146ff; }
+.round-button.github:hover {
+  background-color: #000000;
+}
+.round-button.steam:hover {
+  background-color: #0a446b;
+}
+.round-button.twitch:hover {
+  background-color: #9146ff;
+}
 
 @media screen and (max-width: 959px) {
   .container {
     width: 90%;
     padding: 1.5rem;
   }
-  
+
   .title {
     font-size: 60px;
   }
-  
+
   .button-grid {
     gap: 15px;
   }
@@ -147,16 +168,16 @@ body {
     width: 95%;
     padding: 1rem;
   }
-  
+
   .title {
     font-size: 48px;
   }
-  
+
   .button-grid {
     grid-template-columns: repeat(3, 90px);
     gap: 10px;
   }
-  
+
   .round-button {
     width: 90px;
     height: 90px;
