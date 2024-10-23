@@ -26,6 +26,13 @@ const showToast = (message, isSuccess = true) => {
   }).showToast();
 };
 
+const showTippy = (className, content, placement = "top") => {
+  tippy(className, {
+    content: content,
+    placement: placement,
+  });
+};
+
 const discordId = "algolkk";
 
 document.querySelector(".discord").addEventListener("click", () => {
@@ -38,3 +45,10 @@ document.querySelector(".discord").addEventListener("click", () => {
       showToast("Failed to copy", false);
     });
 });
+
+showTippy('.me', 'Party Chicken');
+showTippy('.mi', 'Misskey.io');
+showTippy('.steam', 'Steam');
+showTippy('.discord', 'Discord', 'bottom');
+showTippy('.github', 'Github', 'bottom');
+showTippy('.twitch', 'Twitch', 'bottom');
