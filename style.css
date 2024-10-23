@@ -49,7 +49,7 @@ body {
 }
 
 .title:hover {
-  color: #39ff14;
+  color: #7add6b;
 }
 
 /* Base button styles */
@@ -109,7 +109,8 @@ body {
   filter: grayscale(35%);
 }
 
-/* Button hover states */
+.title:hover { cursor: default; }
+.round-button.me:hover { cursor: default; }
 .round-button.mi:hover { background-color: rgb(160, 217, 10); }
 .round-button.discord:hover { background-color: #5865f2; }
 .round-button.github:hover { background-color: #000000; }
