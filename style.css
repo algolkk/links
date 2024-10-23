@@ -4,6 +4,12 @@
     url("/font/x12y16pxLineLinker.woff") format("woff");
 }
 
+@font-face {
+  font-family: "x14y24pxHeadUpDaisy";
+  src: url("/font/x14y24pxHeadUpDaisy.woff") format("woff2"),
+    url("/font/x14y24pxHeadUpDaisy.woff") format("woff");
+}
+
 body {
   position: relative;
   display: flex;
@@ -12,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #2d2d2d;
-  font-family: "x12y16pxLineLinker", Arial, sans-serif;
+  font-family: "x14y24pxHeadUpDaisy", Arial, sans-serif;
 }
 
 .container {
@@ -27,7 +33,7 @@ body {
 
 .content {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -44,8 +50,8 @@ body {
 .title {
   margin: 0;
   color: #f0f0f0;
+  font-family: "x12y16pxLineLinker", Arial, sans-serif;
   font-size: 72px;
-  transition: color 0.3s ease;
 }
 
 .title:hover {
