@@ -1,10 +1,4 @@
 @font-face {
-  font-family: "x12y16pxLineLinker";
-  src: url("/font/x12y16pxLineLinker.woff2") format("woff2"),
-    url("/font/x12y16pxLineLinker.woff") format("woff");
-}
-
-@font-face {
   font-family: "x14y24pxHeadUpDaisy";
   src: url("/font/x14y24pxHeadUpDaisy.woff2") format("woff2"),
     url("/font/x14y24pxHeadUpDaisy.woff") format("woff");
@@ -34,7 +28,7 @@ body {
 .content {
   display: block;
   margin: 0;
-  text-align: center;
+  text-align: center !important;
 }
 
 .button-grid {
@@ -48,13 +42,8 @@ body {
 }
 
 .title {
-  margin: 20px 0;
-  font-family: "x12y16pxLineLinker", Arial, sans-serif;
-  font-size: 72px;
-}
-
-.title:hover {
-  color: #7add6b;
+  margin: 0;
+  align-items: center;
 }
 
 .round-button {
@@ -174,8 +163,8 @@ body {
     padding: 1.5rem;
   }
 
-  .title {
-    font-size: 60px;
+  .title img {
+    width: 340px;
   }
 
   .button-grid {
@@ -194,8 +183,8 @@ body {
     align-items: center;
   }
 
-  .title {
-    font-size: 48px;
+  .title img {
+    width: 300px;
   }
 
   .button-grid {
