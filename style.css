@@ -101,6 +101,16 @@ body {
   filter: grayscale(35%);
 }
 
+.round-button.lotuskey img {
+  position: relative;
+  z-index: 3;
+  width: 70%;
+  height: 70%;
+  padding: 10px;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
 .title:hover {
   cursor: default;
 }
@@ -122,6 +132,14 @@ body {
 
 .round-button.mi:hover {
   background-color: #86bb00;
+}
+
+.round-button.lotuskey:hover {
+  background-color: #99cc99;
+}
+
+.round-button.lotuskey img:hover {
+  filter: none;
 }
 
 /* .discord-id {
@@ -151,6 +169,11 @@ body {
 
 .round-button.twitch:hover {
   background-color: #9146ff;
+}
+
+.round-button.question:hover {
+  background-color: #222222;
+  cursor: default;
 }
 
 @media screen and (max-width: 959px) {
