@@ -49,8 +49,9 @@ document.querySelector(".discord").addEventListener("click", () => {
 showTippy('.me', 'Party Chicken');
 showTippy('.mi', 'Misskey.io');
 showTippy('.lotuskey', "Lotuskey (Algolkk's Misskey Server)");
-showTippy('.steam', 'Steam', 'bottom');
-showTippy('.discord', 'Discord', 'bottom');
-showTippy('.github', 'Github', 'bottom');
-showTippy('.twitch', 'Twitch', 'bottom');
-showTippy('.question', '???', 'bottom');
+showTippy('.mi-design', 'misskey.design');
+showTippy('.steam', 'Steam');
+showTippy('.discord', 'Discord');
+showTippy('.github', 'Github');
+showTippy('.twitch', 'Twitch');
+showTippy('.question', '???');

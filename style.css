@@ -142,6 +142,10 @@ body {
   filter: none;
 }
 
+.round-button.mi-design:hover {
+  background-color: #FF9966;
+}
+
 /* .discord-id {
   display: none;
 } */
