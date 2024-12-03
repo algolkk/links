@@ -175,10 +175,15 @@ body {
   background-color: #9146ff;
 }
 
+.round-button.fedibird:hover {
+  background-color: #9A0099;
+}
+
+/* 
 .round-button.question:hover {
   background-color: #222222;
   cursor: default;
-}
+} */
 
 @media screen and (max-width: 959px) {
   body {

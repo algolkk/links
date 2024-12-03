@@ -54,4 +54,5 @@ showTippy('.steam', 'Steam');
 showTippy('.discord', 'Discord');
 showTippy('.github', 'Github');
 showTippy('.twitch', 'Twitch');
-showTippy('.question', '???');
+showTippy('.fedibird', 'Fedibird');
+// showTippy('.question', '???');
