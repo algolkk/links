@@ -130,20 +130,12 @@ body {
   }
 }
 
-.round-button.mi:hover {
-  background-color: #86bb00;
-}
-
 .round-button.lotuskey:hover {
   background-color: #99cc99;
 }
 
 .round-button.lotuskey img:hover {
   filter: none;
-}
-
-.round-button.mi-design:hover {
-  background-color: #FF9966;
 }
 
 /* .discord-id {
