@@ -2,84 +2,244 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <link rel="icon" href="/favicon.ico" id="favicon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>algolkk</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
     <div class="container">
-      <div class="content title">
-        <img src="./img/algolkk.png" alt="algolkk" />
-      </div>
-      <div class="content button-grid">
-        <button class="round-button lotuskey">
-          <a href="https://lotuskey.net/@algolkk" target="_blank">
-            <img src="./img/lotus-nobg.png" alt="Lotuskey" />
-          </a>
-        </button>
-        <button class="round-button me">
-          <img src="./img/me.png" alt="algolkk" />
-        </button>
-        <button class="round-button fedibird">
-          <a rel="me" href="https://fedibird.com/@algolkk" target="_blank">
-            <img src="./img/svg/mastodon.svg" alt="Fedibird" />
-          </a>
-        </button>
-        <button class="round-button discord">
-          <!-- <span class="discord-id">algolkk</span> -->
-          <img src="./img/svg/discord.svg" class="discord-icon" alt="Discord" />
-        </button>
-        <button class="round-button steam">
+      <div class="card">
+        <h1 class="title">algolkk</h1>
+
+        <div class="profile-container">
+          <img src="/img/me.png" alt="Profile" class="profile-image" />
+          <!-- hearts -->
+          <svg class="floating-heart" viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            />
+          </svg>
+          <svg class="floating-heart" viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            />
+          </svg>
+        </div>
+
+        <nav class="nav">
           <a
-            href="https://steamcommunity.com/profiles/76561199177189397/"
+            href="https://lotuskey.net/@algolkk"
+            class="nav-link"
             target="_blank"
           >
-            <img src="./img/svg/steam.svg" alt="Steam" />
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Lotuskey (Misskey)
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
           </a>
-        </button>
-        <button class="round-button github">
-          <a href="https://github.com/algolkk" target="_blank">
-            <img src="./img/svg/github.svg" alt="Github" />
+          <a
+            href="https://mitra.lotuskey.net/@algolkk"
+            class="nav-link"
+            target="_blank"
+          >
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Lotuskey (Mitra)
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
           </a>
-        </button>
-        <button class="round-button twitch">
-          <a href="https://www.twitch.tv/algolkk" target="_blank">
-            <img src="./img/svg/twitch.svg" alt="Twitch" />
+          <a
+            href="https://fedibird.com/@algolkk"
+            class="nav-link"
+            target="_blank"
+          >
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Fedibird (Mastodon)
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
           </a>
-        </button>
-        <button class="round-button question">
-          <img src="./img/svg/question_mark.svg" alt="???" />
-        </button>
-        <button class="round-button question">
-          <img src="./img/svg/question_mark.svg" alt="???" />
-        </button>
-        <!-- <button class="round-button question">
-          <img src="./img/svg/question_mark.svg" alt="???" />
-        </button> -->
-      </div>
-      <div class="content footer">
-        <div>
-          <p>a.k.a algol / poyo / kalam / Kalmar</p>
+          <a
+            href="https://logtus.algolkk.com/"
+            class="nav-link"
+            target="_blank"
+          >
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Website
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="https://steamcommunity.com/profiles/76561199177189397/" class="nav-link" target="_blank">
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Steam
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.twitch.tv/algolkk" class="nav-link" target="_blank">
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Twitch
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="https://github.com/algolkk" class="nav-link" target="_blank">
+            <div class="nav-link-content">
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              Github
+              <svg
+                class="nav-link-heart"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </a>
+          <!-- <a href="#" class="nav-link" target="_blank">
+          <div class="nav-link-content">
+            <svg class="nav-link-heart" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+            Link
+            <svg class="nav-link-heart" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </div>
+        </a> -->
+        </nav>
+        <div class="timeline">
+          <iframe
+            src="https://lotuskey.net/embed/user-timeline/a040dfxa5x19000d?maxHeight=400"
+            data-misskey-embed-id="v1_a5b6fb46-e582-4013-8568-46b4167490e0"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="
+              border: none;
+              width: 100%;
+              max-width: 500px;
+              height: 300px;
+              color-scheme: light dark;
+            "
+          ></iframe>
+          <script defer src="https://lotuskey.net/embed.js"></script>
         </div>
-        <p>©AlgolKK</p>
       </div>
+      <footer class="footer">
+        <p class="copyright">©algolkk</p>
+      </footer>
     </div>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
-    <script src="./script.js"></script>
   </body>
 </html>
